@@ -1,0 +1,112 @@
+POST http://localhost:3005/api/user/register
+Content-Type: application/json
+{
+  "first_name": "srinivas",
+  "last_name": "meda",
+  "email": "svas77310@gmail.com",
+  "password": "password123"
+
+}
+###
+POST  http://localhost:3005/api/user/profile 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+Content-Type: application/json
+{
+  "first_name": "Srinivas",
+  "last_name": "meda"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 42
+etag: W/"2a-t5BkG/uPC0n47t5uBLOFYq76Tzo"
+date: Tue, 19 Nov 2024 05:40:11 GMT
+connection: close
+###
+POST http://localhost:3005/api/user/updatepassword
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+Content-Type:application/json
+{
+    "password":"password143"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 43
+etag: W/"2b-1leFLxO9pvRJ4B0CZIygDRcnOKs"
+date: Tue, 19 Nov 2024 06:46:16 GMT
+connection: close
+###
+POST http://localhost:3005/api/user/resetpassword/:token
+Content-Type:application/json 
+{
+    "password": "newpassword123"
+}
+
+HTTP/1.1 500  - Internal Server Error
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 336
+etag: W/"150-WbF6JHMAGqjP7jMFsx0VgvdQE0M"
+date: Tue, 19 Nov 2024 09:14:23 GMT
+connection: close
+###
+POST http://localhost:3005/api/user/forgotpassword 
+Content-Type: application/json 
+{
+    "email": "svas77310@gmail.com"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 77
+etag: W/"4d-JN/OmiY8Fqi9HNDZGlJ0Le8O10E"
+date: Tue, 19 Nov 2024 09:15:08 GMT
+connection: close
+###
+GET http://localhost:3005/api/user/refreshToken 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 191
+etag: W/"bf-V9emarsTx5TddMGPd6FKKzc9Opg"
+date: Tue, 19 Nov 2024 05:01:12 GMT
+connection: close
+###
+GET http://localhost:3005/api/user/profile 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 122
+etag: W/"7a-oSekE+u3VopHxtmstu1fMhf5fWo"
+date: Tue, 19 Nov 2024 05:03:14 GMT
+connection: close
+###
+POST http://localhost:3005/api/user/login
+Content-Type: application/json
+{
+    "email":"svas77310@gmail.com",
+    "password": "password123"
+}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 467
+etag: W/"1d3-Lw6/ghUcTxCbNMfD7VwK4dl4PfM"
+date: Tue, 19 Nov 2024 09:15:56 GMT
+connection: close
