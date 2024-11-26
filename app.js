@@ -10,12 +10,14 @@ const app = express();
 
 //import router 
 import languageRoute from './src/routes/languageRoute.js';
+import categoryRoute from './src/routes/categoryRoute.js';
 import  userRoute from './src/routes/userRoute.js';
 
 app.use(express.json()); 
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use('/api/language', languageRoute);
+app.use('/api/category', categoryRoute);  // Replace with your category route path if necessary
 app.use('/api/user', userRoute);
 
 app.use(notFound) 

@@ -1,12 +1,21 @@
 POST http://localhost:3005/api/user/register
 Content-Type: application/json
 {
-  "first_name": "srinivas",
+  "first_name": "srinu",
   "last_name": "meda",
   "email": "svas77310@gmail.com",
   "password": "password123"
 
 }
+
+HTTP/1.1 201  - Created
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 266
+etag: W/"10a-B8bt4JC8kpkxdbqwPXUQ9uWNwrU"
+date: Mon, 25 Nov 2024 09:46:52 GMT
+connection: close
 ###
 POST  http://localhost:3005/api/user/profile 
 Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
@@ -102,11 +111,11 @@ Content-Type: application/json
     "password": "password123"
 }
 
-HTTP/1.1 200  - OK
+HTTP/1.1 404  - Not Found
 x-powered-by: Express
 access-control-allow-origin: *
 content-type: application/json; charset=utf-8
-content-length: 467
-etag: W/"1d3-Lw6/ghUcTxCbNMfD7VwK4dl4PfM"
-date: Tue, 19 Nov 2024 09:15:56 GMT
+content-length: 247
+etag: W/"f7-B8ZFftBAecpQ3ETTpAAQxpIb6/o"
+date: Mon, 25 Nov 2024 09:41:27 GMT
 connection: close
