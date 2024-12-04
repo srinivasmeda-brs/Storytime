@@ -10,7 +10,7 @@ const router = express.Router();
 router.post('/register', createUser);
 
 // Verify email with the token passed in the URL
-router.get('/verifyEmail/:verifyToken', verifyEmail);
+router.get('/verifyemail/:verifytoken', verifyEmail);
 router.post('/login', loginUser);
 router.get("/refreshToken",checkToken, generateSpotifyToken);
 router.get('/profile', checkToken, getUser)
