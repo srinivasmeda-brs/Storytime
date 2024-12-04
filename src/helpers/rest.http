@@ -17,8 +17,29 @@ etag: W/"10a-B8bt4JC8kpkxdbqwPXUQ9uWNwrU"
 date: Mon, 25 Nov 2024 09:46:52 GMT
 connection: close
 ###
+https://storytime-1.onrender.com/api/user/updatelanguage
+###
+POST https://storytime-1.onrender.com/api/user/updatelanguage
+
+HTTP/1.1 401  - Unauthorized
+date: Fri, 29 Nov 2024 04:08:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 47
+connection: close
+cf-ray: 8e9fbc7fcc8ece06-SIN
+cf-cache-status: DYNAMIC
+access-control-allow-origin: *
+content-encoding: br
+etag: W/"2f-gVny7z2awZdefQp6xnT//E61RX8"
+vary: Accept-Encoding
+rndr-id: cfa88aad-ca0a-445d
+x-powered-by: Express
+x-render-origin-server: Render
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+###
 POST  http://localhost:3005/api/user/profile 
-Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ0NGU3NGNiYzY4MWQ4YjhjN2E5ZDUiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzI2MTU1NjcsImV4cCI6MTczNTIwNzU2N30.FhOvTpv_zav75RRK_-mROlUuj3Bzy1xoepYoAHB2XNU
 Content-Type: application/json
 {
   "first_name": "Srinivas",
@@ -31,7 +52,18 @@ access-control-allow-origin: *
 content-type: application/json; charset=utf-8
 content-length: 42
 etag: W/"2a-t5BkG/uPC0n47t5uBLOFYq76Tzo"
-date: Tue, 19 Nov 2024 05:40:11 GMT
+date: Tue, 26 Nov 2024 11:11:09 GMT
+connection: close
+###
+GET  http://localhost:3005/api/category
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 2
+etag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+date: Tue, 26 Nov 2024 12:31:40 GMT
 connection: close
 ###
 POST http://localhost:3005/api/user/updatepassword
@@ -80,6 +112,8 @@ etag: W/"4d-JN/OmiY8Fqi9HNDZGlJ0Le8O10E"
 date: Tue, 19 Nov 2024 09:15:08 GMT
 connection: close
 ###
+POST http://localhost:3005/api/user//updatelanguage
+###
 GET http://localhost:3005/api/user/refreshToken 
 Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
 
@@ -92,16 +126,28 @@ etag: W/"bf-V9emarsTx5TddMGPd6FKKzc9Opg"
 date: Tue, 19 Nov 2024 05:01:12 GMT
 connection: close
 ###
+POST http://localhost:3005/api/user//updatelanguage
+{}
+
+HTTP/1.1 401  - Unauthorized
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 47
+etag: W/"2f-gVny7z2awZdefQp6xnT//E61RX8"
+date: Fri, 29 Nov 2024 04:15:46 GMT
+connection: close
+###
 GET http://localhost:3005/api/user/profile 
-Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzNhZTk3ZWVkMDk3NjUxYzM3YTg2NDAiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzE5ODgzMjIsImV4cCI6MTczNDU4MDMyMn0.jSv_TvmfZsP0ol3r_cBIXmgPm2ETSw0b9MloiZeSJzk
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzQ0NGU3NGNiYzY4MWQ4YjhjN2E5ZDUiLCJlbWFpbCI6InN2YXM3NzMxMEBnbWFpbC5jb20iLCJpYXQiOjE3MzI2MDM4NzcsImV4cCI6MTczNTE5NTg3N30.-8uBakvFaHJ-1wU-peoHODk-SxCnWo5TsSyZR8pVOrw
 
 HTTP/1.1 200  - OK
 x-powered-by: Express
 access-control-allow-origin: *
 content-type: application/json; charset=utf-8
 content-length: 122
-etag: W/"7a-oSekE+u3VopHxtmstu1fMhf5fWo"
-date: Tue, 19 Nov 2024 05:03:14 GMT
+etag: W/"7a-SjgfzfTIgsMJP+eAX+1lcJzlJMU"
+date: Tue, 26 Nov 2024 09:09:52 GMT
 connection: close
 ###
 POST http://localhost:3005/api/user/login
@@ -111,11 +157,11 @@ Content-Type: application/json
     "password": "password123"
 }
 
-HTTP/1.1 404  - Not Found
+HTTP/1.1 200  - OK
 x-powered-by: Express
 access-control-allow-origin: *
 content-type: application/json; charset=utf-8
-content-length: 247
-etag: W/"f7-B8ZFftBAecpQ3ETTpAAQxpIb6/o"
-date: Mon, 25 Nov 2024 09:41:27 GMT
+content-length: 467
+etag: W/"1d3-JO6y6LHOIhGISXK+prgo6GnYp5M"
+date: Tue, 26 Nov 2024 06:51:18 GMT
 connection: close
