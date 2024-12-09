@@ -262,7 +262,7 @@ const updatedUserProfile = async (req, res, next) => {
 };
 
 const updatePreferedLanguage = async (req, res, next) => {
-  const { languageIds } = req.body;
+  const { language } = req.body;
 
   try {
     // Find user by ID
@@ -274,14 +274,14 @@ const updatePreferedLanguage = async (req, res, next) => {
     }
 
     // Validate `language`
-    if (!languageIds) {
+    if (!language) {
       const err = new Error("Language is required");
       err.status = 400;
       return next(err);
     }
 
     // Update the preferred language
-    user.languages = languageIds;
+    user.languages = language;
     await user.save();
 
     res.status(200).json({ message: "Language updated successfully" });
