@@ -3,7 +3,7 @@ Content-Type: application/json
 {
   "first_name": "srinu",
   "last_name": "meda",
-  "email": "svas77310@gmail.com",
+  "email": "msvas77310@gmail.com",
   "password": "password123"
 
 }
@@ -12,9 +12,9 @@ HTTP/1.1 201  - Created
 x-powered-by: Express
 access-control-allow-origin: *
 content-type: application/json; charset=utf-8
-content-length: 266
-etag: W/"10a-B8bt4JC8kpkxdbqwPXUQ9uWNwrU"
-date: Mon, 25 Nov 2024 09:46:52 GMT
+content-length: 267
+etag: W/"10b-QrvO2PSHO5s9FJ27j+sLW9xtTko"
+date: Wed, 04 Dec 2024 08:54:00 GMT
 connection: close
 ###
 https://storytime-1.onrender.com/api/user/updatelanguage

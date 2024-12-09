@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use('/api/languages', languageRoute);
 app.use('/api/categories', categoryRoute);  // Replace with your category route path if necessary
-app.use('/api/user', userRoute);
+app.use('/api/users', userRoute);
 
 app.use(notFound) 
 app.use(errorHandler)
