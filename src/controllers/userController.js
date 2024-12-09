@@ -274,14 +274,14 @@ const updatePreferedLanguage = async (req, res, next) => {
     }
 
     // Validate `language`
-    if (!language) {
+    if (!languageIds) {
       const err = new Error("Language is required");
       err.status = 400;
       return next(err);
     }
 
     // Update the preferred language
-    user.languages = language;
+    user.languages = languageIds;
     await user.save();
 
     res.status(200).json({ message: "Language updated successfully" });
